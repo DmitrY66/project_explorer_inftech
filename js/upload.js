@@ -46,7 +46,7 @@ const upload = () => {
           preiew.insertAdjacentHTML('afterbegin', `
             <div class="preview-img">
             <div class="preview-remove">&times;</div>
-            <img src="/img/text-icon.png" alt="" />
+            <img src="./img/text-icon.png" alt="" />
             </div>
           `);
         }

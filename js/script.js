@@ -88,7 +88,7 @@ const createDir = (arrayFiles) => {
   arrayFiles.forEach(elem => {
     let link = document.createElement('li');
     link.className = "dir-fail";
-    link.innerHTML = `<a href="/${dirName}/${elem}" download="">скачать ${elem}</a>`
+    link.innerHTML = `<a href="./${dirName}/${elem}" download="">скачать ${elem}</a>`
     asideRightContent.appendChild(link);
   })
 }
