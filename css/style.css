@@ -1,0 +1,168 @@
+.windowname h4 {
+  margin: 0 20px;
+  padding: 10px 0;
+}
+.windowname {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  color: rgb(229, 226, 226);
+  background: #00408a;
+}
+
+.section-top {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  /* background: #c74242; */
+}
+
+.section-top-control {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1;
+  padding: 10px 0;
+  background: #4287c7;
+  list-style: none;
+}
+
+.control-item {
+  margin: 6px;
+  /* background: #61c742; */
+}
+
+.control-item:first-child {
+  margin-left: 20px;
+}
+
+.control-item:last-child {
+  margin-left: 20px;
+}
+
+.section-center {
+  display: flex;
+  height: auto;
+  min-height: 80vh;
+  margin-bottom: 160px;
+  background: #d6d7d8;
+}
+
+.aside-left {
+  margin: 1px;
+  flex: 1 auto;
+  background: #edf1f3;
+}
+
+.aside-right {
+  margin: 1px 1px 1px 0;
+  flex: 6 auto;
+  background: #f2f4f7;
+}
+
+.ul-aside-left {
+  margin: 40px 0 0 20px;
+}
+
+.ul-aside-left a {
+  color: #302e2e;
+}
+
+.ul-aside-left img {
+  float: left;
+  padding-right: 10px;
+}
+
+.ul-aside-left a:hover {
+  color: #777474;
+}
+
+.modal-folder,
+.modal-delete-folder {
+  left: -100%;
+  position: absolute;
+  transition: 0.8s;
+  background: #5ac6f0;
+  z-index: 100;
+}
+
+.modal-rename-folder {
+  right: -100%;
+  position: absolute;
+  transition: 0.8s;
+  background: #5ac6f0;
+  z-index: 100;
+}
+
+.modal-upload-file {
+  left: -100%;
+  position: absolute;
+  border: 15px solid transparent;
+  transition: 0.8s;
+  background: #5ac6f0;
+  z-index: 100;
+}
+
+.modal-upload-file input {
+  max-width: 340px;
+  margin: 4px 12 6px 12px;
+  background: #d5dde0;
+  display: none;
+}
+
+.modal-folder label,
+.modal-delete-folder label,
+.modal-rename-folder label {
+  padding: 0 20px;
+}
+
+.modal-folder p,
+.modal-delete-folder p,
+.modal-rename-folder p {
+  margin-left: 10px;
+}
+
+.preview-img {
+  position: relative;
+}
+
+.preview-remove {
+  font-size: 44px;
+  line-height: 0;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.preview-img img {
+  width: 140px;
+  height: auto;
+}
+
+.aside-right-content {
+  padding: 50px;
+}
+
+.aside-right-content a {
+  color: #3d3d3f;
+  text-decoration: none;
+}
+
+.aside-right-content a:hover {
+  color: #9fb4db;
+}
+
+.modal-download-file {
+  right: -100%;
+  position: absolute;
+  padding: 20px 15px 30px 15px;
+  transition: 0.8s;
+  background: #5ac6f0;
+  z-index: 100;
+}
+.modal-download-file p {
+  padding-bottom: 15px;
+  margin-left: 10px;
+}

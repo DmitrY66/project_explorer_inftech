@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>File manager JS</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="favicon/ico" href="./favicon.ico">
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <div class="windowname">
+      <h4>Explorer Test</h4>
+    </div>
+
+    <section class="section-top">
+
+      <ul class="section-top-control">
+        <a>
+          <li class="control-item" id="create-folder">Создать папку</li>
+        </a>
+        <a>
+          <li class="control-item" id="delete-folder">Удалить папку</li>
+        </a>
+        <a>
+          <li class="control-item" id="upload-file">Загрузить файл</li>
+        </a>
+        <a>
+          <li class="control-item" id="download-file">Скачать файл</li>
+        </a>
+        <!-- <a>
+          <li class="control-item">Удалить файл</li>
+        </a> -->
+        <a>
+          <li class="control-item" id="rename-folder">Переименовать</li>
+        </a>
+      </ul>
+
+      <div class="modal-folder">
+        <label>
+          <p>введите название папки</p><input type="text">
+          <br><button id="button-mod-fold">создать</button>
+        </label>
+      </div>
+
+      <div class="modal-delete-folder">
+        <label>
+          <p>введите название папки</p><input type="text">
+          <br><button id="button-mod-delete-fold">удалить</button>
+        </label>
+      </div>
+
+      <div class="modal-rename-folder">
+        <label>
+          <p>введите текущее имя</p><input type="text">
+          <p>введите новое имя</p><input type="text">
+          <br><button id="button-mod-rename-fold">переименовать</button>
+        </label>
+      </div>
+
+      <div class="modal-upload-file">
+        <input type="file" id="input-upload-file" accept="image/*,text/*">
+        <button id="btn-upload-open">выбрать файл</button>
+        <br><button id="btn-upload-file">загрузить</button>
+      </div>
+
+      <div class="modal-download-file">
+        <label>
+          <p>выберите директорию</p>
+          <select name="mod-downl-file" id="mod-downl-file" class="mod-downl-file">
+            <option value="dir0">выберите директорию</option>
+            <option value="dir1">директория 1</option>
+            <option value="dir2">директория 2</option>
+          </select>
+        </label>
+      </div>
+
+    </section>
+
+    <section class="section-center">
+
+      <aside class="aside-left">
+        <ul class="ul-aside-left">
+
+        </ul>
+      </aside>
+
+      <aside class="aside-right">
+        <div class="container">
+          <ul class="aside-right-content">
+
+
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+  </div>
+
+
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <script src="./js/script.js"></script>
+  <script src="./js/upload.js"></script>
+
+</body>
+
+</html>
